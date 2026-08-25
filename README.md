@@ -17,28 +17,30 @@ Este projeto propõe uma planilha que automatiza esses cálculos, permitindo sim
 
 ## 📊 Estrutura da planilha
 
-O arquivo `Simulador_de_investimentos_fundos_imobiliarios.xlsx` contém duas abas:
+O arquivo [Simulador de investimentos fundos imobiliarios.xlsx](Simulador%20de%20investimentos%20fundos%20imobiliarios.xlsx) contém duas abas:
 
 ### Aba "Simulador"
 
 **Configurações gerais**
 - Salário
 - Rendimento da carteira (%)
-- Sugestão de investimento (30% do salário)
+- Sugestão de investimento (30% do salário, usada como referência na planilha)
 
 ![Configurações Gerais](images/simulador-configuracoes.png)
 
 **Investimento mensal**
 - Valor a investir por mês
 - Prazo em anos
-- Taxa de rendimento mensal
+- Taxa de rendimento mensal, informada como percentual ao mês
 - Patrimônio acumulado (calculado)
-- Dividendos mensais estimados (calculado)
+- Dividendos mensais estimados (calculados)
 
 ![Investimento Mensal](images/investimento-mensal.png)
 
 **Cenários de projeção**
 - Simulação automática do patrimônio acumulado e dos dividendos mensais para 2, 5, 10, 20 e 30 anos, a partir do valor mensal investido e da taxa de rendimento definidos.
+
+Os valores são projeções baseadas nos aportes e na taxa informados. Os rendimentos reais podem variar e não há garantia de rentabilidade.
 
 ![Cenários de Projeção](images/simulador-cenarios.png)
 
@@ -58,7 +60,7 @@ Tabela de referência com os percentuais de alocação recomendados para cada co
 ## 🧮 Conceitos e funções aplicados
 
 - Fórmulas financeiras para cálculo de juros compostos aplicados a aportes mensais
-- Cálculo de dividendos mensais estimados a partir da taxa de rendimento
+- Cálculo de dividendos mensais estimados a partir da taxa de rendimento informada
 - Uso de tabelas de referência e busca de valores (`PROCV`/`ÍNDICE`+`CORRESP`) para vincular perfil de investidor à alocação sugerida
 - Cenários comparativos de curto, médio e longo prazo
 - Boas práticas de organização e formatação de planilhas financeiras
@@ -73,7 +75,7 @@ Tabela de referência com os percentuais de alocação recomendados para cada co
 ## 📁 Estrutura do repositório
 
 ```
-├── Simulador_de_investimentos_fundos_imobiliarios.xlsx   # Planilha do simulador
+├── Simulador de investimentos fundos imobiliarios.xlsx   # Planilha do simulador
 ├── images/
 │   ├── simulador-configuracoes.png                        # Print das Configurações Gerais
 │   ├── investimento-mensal.png                             # Print da seção Investimento Mensal
@@ -85,10 +87,12 @@ Tabela de referência com os percentuais de alocação recomendados para cada co
 
 ## 🚀 Como usar
 
-1. Baixe o arquivo `Simulador_de_investimentos_fundos_imobiliarios.xlsx`
+1. Baixe o arquivo [Simulador de investimentos fundos imobiliarios.xlsx](Simulador%20de%20investimentos%20fundos%20imobiliarios.xlsx)
 2. Abra no Excel (ou Google Sheets)
-3. Preencha os campos de configuração (valor mensal, prazo, taxa de rendimento e perfil de investidor)
+3. Preencha o valor mensal, o prazo em anos, a taxa de rendimento mensal (em percentual ao mês) e o perfil de investidor
 4. Confira os resultados calculados automaticamente: patrimônio acumulado, dividendos mensais e cenários de 2 a 30 anos
+
+> Os resultados são apenas estimativas e não constituem recomendação de investimento. A isenção de Imposto de Renda para pessoa física depende das condições previstas na legislação vigente.
 
 ## 📝 Experiência com o desafio
 
